@@ -23,9 +23,11 @@ export const getWebpackDevConfigPartial = function(projectRoot: string, appConfi
       clearImmediate: false,
       setImmediate: false
     },
-    watchOptions: {
-      aggregateTimeout: 300,
-      poll: 1000,
+    devServer: {
+      watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000,
+      }
     },
   };
 };
