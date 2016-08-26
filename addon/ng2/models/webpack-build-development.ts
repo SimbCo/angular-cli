@@ -22,6 +22,10 @@ export const getWebpackDevConfigPartial = function(projectRoot: string, appConfi
       module: false,
       clearImmediate: false,
       setImmediate: false
-    }
+    },
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000,
+    },
   };
 };
